@@ -16,8 +16,8 @@ public class WebDriverConfig {
     private static WebDriverWait wait;
 
     public WebDriverConfig setUpBrowser(String browser){
-        System.setProperty("webdriver.gecko.driver", "../tricentisAutomation/src/test/java/core/drivers/geckdriver.exe");
-        System.setProperty("webdriver.chrome.driver", "../tricentisAutomation/src/test/java/core/drivers/chromedriver.exe");
+        System.setProperty("webdriver.gecko.driver", "../TricentisTestAutomation/src/test/java/core/drivers/geckdriver.exe");
+        System.setProperty("webdriver.chrome.driver", "../TricentisTestAutomation/src/test/java/core/drivers/chromedriver.exe");
 
         if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
