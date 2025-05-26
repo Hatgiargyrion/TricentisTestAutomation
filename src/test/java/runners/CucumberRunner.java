@@ -19,7 +19,7 @@ public class CucumberRunner {
 
     @BeforeClass
     public static void config() {
-        webDriverConfig.setUpBrowser("chrome").defaultConfig();
+        webDriverConfig.initializeDriver("chrome").defaultConfig();
     }
 
     @AfterClass
